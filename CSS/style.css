@@ -2,3 +2,12 @@ body {
     background-color: #f5f2ec;
     color: #111111;
 }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
