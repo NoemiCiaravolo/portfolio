@@ -9,7 +9,15 @@ body {
     color: var(--testo);
     margin: 0;
     font-family: 'Anybody', sans-serif;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 nav ul {
     list-style-type: none;
@@ -27,10 +35,21 @@ header {
     align-items: center;
     padding: 24px;
 }
-.hero h1{
-    font-size: clamp(4rem, 13vw, 13rem);
+.hero h1 {
+    font-size: min(18vw, 24vh);
     text-transform: uppercase;
-    line-height: 0.9;
-    padding: 10px;
+    line-height: 0.95;
+    font-variation-settings: 'wght' 450, 'wdth' 100;
+}
+.hero {
+    padding: 24px;
+}
+.hero h1 a {
+    font-variation-settings: 'wght' 450, 'wdth' 100;
+    transition: font-variation-settings 0.3s;
+}
 
+.hero h1 a:hover,
+.hero h1 a:focus-visible {
+    font-variation-settings: 'wght' 900, 'wdth' 100;
 }
