@@ -36,10 +36,12 @@ header {
     padding: 24px;
 }
 .hero h1 {
-    font-size: min(18vw, 24vh);
+    font-size: min(10vw, 20vh);
+    white-space: nowrap;
     text-transform: uppercase;
     line-height: 0.95;
     font-variation-settings: 'wght' 450, 'wdth' 100;
+    transition: font-variation-settings 0.3s, background-color 0.3s;
 }
 .hero {
     padding: 24px;
@@ -52,4 +54,20 @@ header {
 .hero h1 a:hover,
 .hero h1 a:focus-visible {
     font-variation-settings: 'wght' 900, 'wdth' 100;
+    background-color: var(--dettaglio);
+}
+.thumb {
+    display: inline-block;
+    width: 1.2em;
+    height: 0.7em;
+    background-color: var(--dettaglio);
+    border-radius: 0.1em;
+    margin: 0 0.1em;
+}
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: var(--dettaglio);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
 }
