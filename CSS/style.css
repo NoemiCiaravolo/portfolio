@@ -2,6 +2,8 @@ body {
     background-color: #f5f2ec;
     color: #111111;
     margin: 0;
+    font-family: 'Anybody', sans-serif;
+
 }
 nav ul {
     list-style-type: none;
