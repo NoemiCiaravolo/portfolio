@@ -1,6 +1,12 @@
+:root {
+    --sfondo: #101A3D;
+    --testo: #FF5A1F;
+    --dettaglio: ##F6EFE3;
+
+}
 body {
-    background-color: #f5f2ec;
-    color: #111111;
+    background-color: var(--sfondo);
+    color: var(--testo);
     margin: 0;
     font-family: 'Anybody', sans-serif;
 
