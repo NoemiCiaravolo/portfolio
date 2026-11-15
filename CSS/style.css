@@ -110,6 +110,13 @@ footer h3 {
     margin: 0;
     overflow-wrap: anywhere;
 }
+.footer-info a {
+    transition: color 0.3s;
+}
+.footer-info a:hover,
+.footer-info a:focus-visible {
+    color: var(--dettaglio);
+}
 .footer-copy {
     margin: 64px 0 0;
     font-size: 0.9rem;
