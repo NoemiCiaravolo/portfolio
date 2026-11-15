@@ -2,6 +2,7 @@
     --sfondo:#F4EDE1;
     --testo: #101A3D;
     --dettaglio: #FF5A1F;
+    --altezza-header: 80px;
 
 }
 body {
@@ -9,12 +10,10 @@ body {
     color: var(--testo);
     margin: 0;
     font-family: 'Anybody', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+   
 }
 main {
-    flex: 1;
+    min-height: calc(100svh - var(--altezza-header));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -24,6 +23,7 @@ nav ul {
     display: flex;
     gap: 20px;
     padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -34,6 +34,8 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 24px;
+    height: var(--altezza-header);
+    box-sizing: border-box;
 }
 .hero h1 {
     font-size: min(10vw, 20vh);
@@ -42,6 +44,7 @@ header {
     line-height: 0.95;
     font-variation-settings: 'wght' 450, 'wdth' 100;
     transition: font-variation-settings 0.3s, background-color 0.3s;
+    margin: 0;
 }
 .hero {
     padding: 24px;
@@ -78,4 +81,36 @@ nav a:focus-visible {
         text-decoration-thickness: 0.06em;
         text-underline-offset: 0.08em;
     }
+}
+footer {
+    background-color: var(--testo);
+    color: var(--sfondo);
+    padding: 48px 24px 24px;
+}
+footer h2 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin: 0 0 48px;
+}
+footer h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--dettaglio);
+    margin: 0 0 16px;
+}
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+}
+.footer-info a,
+.footer-info p {
+    font-size: 1.25rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+.footer-copy {
+    margin: 64px 0 0;
+    font-size: 0.9rem;
 }
